@@ -31,7 +31,7 @@
     }
 }
 
-@media (min-height: 768px) {
+@media (max-height: 768px) {
     .home {
         height: 430px;
     }
