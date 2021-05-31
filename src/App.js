@@ -3,7 +3,10 @@ import React from 'react';
 import './scss/App.scss';
 import Home from './Home';
 import Contact from './Contact';
+import About from './About'
 import Particles from 'react-particles-js';
+
+import { AnimatePresence } from 'framer-motion';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -23,10 +26,14 @@ function App() {
             <Link to="/contact">Contact</Link>
           </div>
         </header>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
+        <AnimatePresence>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/about' component={About} />
+          </Switch>
+        </AnimatePresence>
+        
         <footer>
           <div className="footer__inner">
             <div className="copyrights">All right reserved.</div>
@@ -49,7 +56,7 @@ function App() {
               value: '#B5B5B5'
             },
             opacity: {
-              value: 0.5,
+              value: 1,
               anim: {
                   enable: true
               }

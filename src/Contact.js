@@ -2,6 +2,7 @@ import './scss/Contact.scss';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import validator from 'validator';
+import { motion } from 'framer-motion';
 
 function Contact() {
 
@@ -32,7 +33,11 @@ function Contact() {
         
 
     return (
-        <div>
+        <motion.div 
+            exit={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+        >
             <div className="contact">
                 <div className="contact__inner">
                     <h1>You can send me an email. :)</h1>
@@ -43,7 +48,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
