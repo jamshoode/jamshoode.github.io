@@ -22,16 +22,26 @@
                 width: 400px;
                 height: 400px;
                 position: relative;
-                color: #B5B5B5;
-                font-family: 'Quando', serif;
-                font-size: 18px;
+
+                h5 {
+                    color: #B5B5B5;
+                    font-family: 'Quando', serif;
+                    font-size: 30px;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    color: #B5B5B5;
+                    font-family: 'Quando', serif;
+                    font-size: 16px;
+                }
             }
 
             .middleSide {
 
 
                 img {
-                    width: 500px;
+                    width: 460px;
                     height: 500px;
                 }
             }
@@ -93,6 +103,7 @@
                     div {
                         &::before {
                             width: 90%;
+                            animation: width 1s linear forwards;
                         }
                     }
                 }
@@ -113,6 +124,7 @@
                     div {
                         &::before {
                             width: 78%;
+                            animation: widthz 1s linear forwards;
                         }
                     }
                 }
@@ -133,6 +145,7 @@
                     div {
                         &::before {
                             width: 63%;
+                            animation: widthx 1s linear forwards;
                         }
                     }
                 }
@@ -153,6 +166,7 @@
                     div {
                         &::before {
                             width: 50%;
+                            animation: widthc 1s linear forwards;
                         }
                     }
                 }
@@ -173,12 +187,61 @@
                     div {
                         &::before {
                             width: 59%;
+                            animation: widthv 1s linear forwards;
                         }
                     }
                 }
             }
         }
     }
+}
 
-    
+@keyframes width {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes widthz {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 78%;
+    }
+}
+
+@keyframes widthx {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 63%;
+    }
+}
+
+@keyframes widthc {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes widthv {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 59%;
+    }
 }

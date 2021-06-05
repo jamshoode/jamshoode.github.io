@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './scss/About.scss';
+import profile from './img/profile.jpg';
 
 function About() {
     return (
@@ -11,10 +12,11 @@ function About() {
             <div className="container">
                 <div className="about__inner">
                     <div className="leftSide">
+                        <h5>Taras Khanchuk</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda consectetur praesentium nemo, nihil recusandae? Praesentium, quo! Dolores aut quae ex harum beatae, atque in voluptatem fugiat doloremque consequatur quidem!</p>
                     </div>
                     <div className="middleSide">
-                        <img src={require('./img/profile.jpg')} alt="Halo" />
+                        <img src={profile} alt="Profile picture" />
                     </div>
                     <div className="rightSide">
                         <h5>Services</h5>

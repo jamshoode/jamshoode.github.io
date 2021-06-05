@@ -13,7 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
     <title>Taras Khanchuk</title>
   </head>
-  <body id="particles-js">
+  <body onselectstart='return False'>
     <div id="root"></div>
+    <script>
+      document.oncontextmenu = new Function("return false;");
+    </script>
   </body>
 </html>
